@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('./images/fond2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .contenair {
+            margin-top: 50px;
+            background: rgba(10, 5, 3, 0.4);
+            color: white;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #profile-admin {
+            margin: 30px;
+            text-align: center;
+        }
+        
+        img {
+            border-radius: 100px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="contenair col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+        <h1>Administration</h1>
+        <div class="row">
+            <div id="profile-admin" class="col-sm-6 col-md-4 col-lg-3">
+                <img class="img-thumbnail" style="border: solid 1px black ;border-radius : 100px" src="./images/admin1.png">
+                <strong><p>Stitch</p>
+                <p>February , 27 2002</p>
+                <p>Hawai 5.0</p>
+                <p>Stitch@gmail.com</p></strong>
+
+
+            </div>
+            <div id="profile-admin" class="col-sm-6 col-md-4 col-lg-3">
+                <img class="img-thumbnail" style="border: solid 1px black ;border-radius : 100px" src="./images/admin2.png">
+                <strong><p>Pouba</p>
+                <p>February , 27 2002</p>
+                <p>Hawai 5.0</p>
+                <p>Pouba@gmail.com</p></strong>
+
+            </div>
+            <div id="profile-admin" class="col-sm-6 col-md-4 col-lg-3">
+                <img class="img-thumbnail" style="border: solid 1px black ;border-radius : 100px" src="./images/admin1.png">
+                <strong><p>Stitch</p>
+                <p>February , 27 2002</p>
+                <p>Hawai 5.0</p>
+                <p>Stitch@gmail.com</p></strong>
+
+
+            </div>
+        </div>
+        <div class="contenair col-lg-offset-5 col-md-offset-4 col-sm-offset-3">
+            <p id="name-and-lastname" style="text-align: center;"></p>
+            <strong>                   
+                        <p id="mail" style="text-align: center;"> </p>
+                        <p id="street-and-streetnumber" style="text-align: center;">  </p>
+                        <p id="date-of-birth" style="text-align: center;"></p>
+                    </strong>
+
+        </div>
+        <button type="submit" id="loginBack" class="btn btn-primary btn-block ">Login</button>
+        <button type="submit" id="valid5" class="btn btn-danger btn-block btn-lg" name="Delete">Delete Your Data</button>
+
+    </div>
+
+
+    <script src="./js/main.js" defer></script>
+    <script src="./js/profile.js"></script>
+
+</body>
+
+</html>

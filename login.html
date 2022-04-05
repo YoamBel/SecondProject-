@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            background-image: url('./images/fond1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: slide 10s infinite;
+            color: white;
+        }
+        
+        .container {
+            margin-top: 200px;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        
+        .well {
+            background: rgba(10, 5, 3, 0.4);
+            border: none;
+            border-radius: 15px/15px;
+            box-shadow: 0px 0px 50px 0px white;
+        }
+        
+        @keyframes slide {
+            0% {
+                background-image: url('./images/fond1.png');
+            }
+            33% {
+                background-image: url('./images/fond4.png');
+            }
+            67% {
+                background-image: url('./images/fond5.png');
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+
+        <h1>Login</h1>
+        <form action="" class="well">
+
+            <div class="form-group">
+                <label for="User Name"><Strong>User Name :</Strong></label>
+                <input type="text" class="form-control" id="username1" placeholder="User Name">
+            </div>
+            <div class="form-group">
+                <label for="PassWord"><Strong>PassWord :</Strong></label>
+                <input type="password" class="form-control" id="passeword1" placeholder="PassWord">
+            </div>
+
+
+            <button type="submit" id="valid2" class="btn btn-danger btn-lg ">Valider</button>
+            <a href="registre.html" class="btn btn-warning btn-lg ">Register</a>
+
+        </form>
+        <strong><p id="error2" style="color: rgb(189, 46, 46);"></p>
+        </strong>
+
+
+    </div>
+    <script src="./js/main.js" defer></script>
+
+</body>
+
+</html>
